@@ -28,8 +28,8 @@ class WebManager: NSObject {
                     let json = try JSONSerialization.jsonObject(with: responseString.data!, options: []) as? [String: AnyObject]
                     print("json: ", json!["status"] as! String)
                     withCompletionHandler(json)
-                } catch let error {
-                    print("Error: \(error)")
+                } catch let error1 {
+                    print("Error: \(error1)")
                 }
 
                 withCompletionHandler(nil)
